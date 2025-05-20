@@ -1,0 +1,44 @@
+<!-- 
+    Se implementó una aplicación básica para el seguimiento de proyectos y tareas.
+    Los usuarios pueden agregar proyectos, añadir tareas a cada proyecto, marcarlas como completadas,
+    y los datos se almacenan en localStorage para persistencia.
+-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seguimiento de Proyectos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="main-nav">
+        <ul>
+            <li class="logo-item">
+                <a href="#">
+                  <img src="../img/Logo.png" alt="Logo" class="logo">
+                </a>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Acerca de nosotros </a></li>
+          <li><a href="#">Contacto</a></li>
+          >
+        </ul>
+      </nav>
+    
+    <h1>Seguimiento de Proyectos</h1>
+
+    <!-- Input para agregar el nombre a un proyecto -->
+    <input type="text" id="proyectoNombre" placeholder="Nombre del proyecto">
+    <!--Boton para agregar un proyecto -->
+    <button onclick="agregarProyecto()">Agregar Proyecto</button>
+    
+    <h3>Tareas Totales</h3>
+    <!-- Conteo de tareas -->
+    <p id="TareasT">Completadas: 0 --- Pendientes: 0</p>
+    <!-- Aqui se mostrarán los proyectos creados -->
+    <div id="proyectos"></div>
+    <!-- Archivo de JavaScript-->
+    <script src="script.js"></script>
+</body>
+</html>

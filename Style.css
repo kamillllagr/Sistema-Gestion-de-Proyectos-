@@ -1,0 +1,188 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Menú principal (agrandado) */
+.main-nav {
+    background-color: rgb(251, 175, 53);
+    padding: 1rem 0;
+}
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+.main-nav li + li {
+    margin-left: 2rem;
+}
+.main-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;    
+    padding: 1rem 2rem;   
+    transition: opacity 0.2s;
+}
+.main-nav a:hover {
+    opacity: 0.8;
+}
+
+.main-nav .logo-item {
+    margin-right: 2rem;      
+  }
+
+.main-nav .logo {
+    height: 40px;            
+    width: auto;
+    vertical-align: middle;
+  }
+  
+
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin: 1.5rem 0;
+}
+
+/* Inputs y selects */
+input[type="text"],
+input[type="date"],
+select {
+    padding: 8px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 200px;
+}
+
+/* Botones */
+button {
+    padding: 6px 12px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3498DB;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+button:hover {
+    background-color: #2980B9;
+}
+
+/* Contenedor de proyectos */
+.proyecto {
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 15px 0;
+    background-color: #fff;
+}
+.proyecto h3 {
+    margin-top: 0;
+    color: #34495E;
+}
+
+/* Listas de tareas */
+ul {
+    list-style: none;
+    padding: 0;
+}
+li {
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 5px;
+    position: relative;
+    cursor: pointer;
+}
+li p {
+    margin: 5px 0;
+}
+/* Prioridades */
+li.baja {
+    background-color: #2BC532;
+}
+li.media {
+    background-color: #F1C823;
+}
+li.alta {
+    background-color: #F85643;
+    color: #fff;
+}
+/* Completadas */
+li.completada {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+/* Botones en cada tarea */
+.botones-tarea {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+.botones-tarea button {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.botones-tarea .completar {
+    background-color: #29D872;
+}
+.botones-tarea .completar:hover {
+    background-color: #27AE60;
+}
+.botones-tarea .eliminar {
+    background-color: #E74C3C;
+}
+.botones-tarea .eliminar:hover {
+    background-color: #C0392B;
+}
+
+/* Contador de tareas */
+#TareasT {
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #2D3436;
+    margin-left: 5px;
+}
+
+/* Sección de comentarios */
+.comentarios {
+    margin-top: 10px;
+    padding-left: 15px;
+    border-left: 2px solid #ccc;
+}
+.comentarios ul {
+    list-style: disc;
+    margin: 5px 0;
+    padding-left: 20px;
+}
+.comentarios input[type="text"] {
+    margin-top: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 80%;
+}
+.comentarios ul li button {
+    margin-left: 10px;
+    background-color: #E74C3C;
+    color: #fff;
+    border: none;
+    padding: 3px 6px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.comentarios ul li button:hover {
+    background-color: #C0392B;
+}
